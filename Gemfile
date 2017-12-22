@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'figaro'
+gem 'fog'
+
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick', '~> 4.3'
@@ -55,4 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
 	gem 'pg'
+	gem 'aws-sdk', '~> 2.3'
 end
